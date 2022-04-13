@@ -1,0 +1,350 @@
+/* Обнуление стилей по умолчанию. Взято отсюда: https://youtu.be/kfOe-F64C_A?list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr*/
+
+/* убираем все отступы и рамки */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Эта штука меняет подсчет ширины блока так чтобы нам было удобней верстать 
+   Ширина блока включает в себя padding и толщину границы border, но не включает в расчет свойства margin*/
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* убираем линии обводки у некоторых браузеров */
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+/* перечисляем некоторые теги и делаем ихблочными */
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+/* К тегам HTML и BODY применяем парметры которые уравниваю поведение шрифтов и элементов для разных браузеров */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Теги форм теперь наследуют шрифт */
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+/* Устраняют други е нюансы поведения тегов разных браузеров */
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* Обнуляем все наши заголовки h */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+*{
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: aliceblue;   
+}
+body{
+    width: 100%;
+}
+
+.header { 
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1434px;
+}
+.container-inner{
+    display: flex;
+}
+
+.logo {}
+
+.header__logo {margin: 53px 0 0 104px;}
+
+.logo__img {}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__central-menu {
+    margin: 54px  0 0 336px;
+}
+
+.menu__items {
+    display: flex;
+}
+
+.menu__item {
+    margin: 0 10px;
+}
+
+.menu__item-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+.menu__item-link:hover{
+    color:#ff0000;
+    transition: linear 0.5s;
+}
+
+.header__right-menu {
+    margin: 54px 0 0 327px;
+}
+
+.menu__item-link--color--gray {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #808080;
+}
+
+.main {}
+
+.falcon-heavy {
+    margin: 0 auto;
+}
+
+.main__falcon-heavy {
+    margin: 120px 0 32px;
+}
+
+.falcon-heavy__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.falcon-heavy__text-under-title {
+    width: 268px;
+    margin: 26px auto 0px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: lowercase;
+    color: #FFFFFF;
+}
+
+.earth {
+    justify-content: center;
+}
+
+.earth__rotation-video {
+    justify-content: center;
+    width: 1437px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.about__text {
+}
+
+.about__parameters {
+    margin: 492px 0 0 149px;
+}
+
+.about__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.about__parameters-table {
+    margin-top: 40px;
+    border-spacing: 0;
+}
+.about__parameters-1st-column{
+    width: 288px;
+}
+.about__parameters-2nd-column{
+    width: 254px;
+}
+td{
+    height: 43px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 179.69%;
+    color: #FFFFFF;
+}
+
+.about__parameters-table--gray-text {
+    color: #B2B0B2;
+}
+
+.about__benefit {
+    margin: 213px 0 0 149px;
+}
+
+.about__benefit-text {
+    margin: 45px 0 0 0;
+    width: 490px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.about__picture {
+    
+}
+
+.about__picture-img {margin-top: -50px;}
+
+.footer {
+    margin: 183px 0 0 0;
+    text-align: center;
+}
+
+.footer__logo {
+    display: inline-block;
+    justify-content: center;
+}
+
+.footer__social {
+    display: flex;
+    margin: 43px 0 0 0;
+    justify-content: center;
+
+}
+.footer__social-item {
+    margin: 0 10px ;  
+}
+
+.footer__social-item-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer__social-item-link:hover{
+    color: #ff0000;
+    transition: linear 0.5s;
+}
+
+.footer__addition-info {
+    margin: 28px auto 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #808080;
+}
+
+.footer__btn {
+    margin: 30px auto 130px;
+    
+    width: 260px;
+    height: 60px;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.footer__btn:hover{
+    font-weight: 700;
+    text-transform: uppercase;
+    border-color: #ff0000;
+    transition: linear 0.5s;
+}
+.footer__btn:active {
+    color: #ff0000;
+    transition: linear 0s;
+}
+
+
+.earth__rotation-video {
+
+}
+
